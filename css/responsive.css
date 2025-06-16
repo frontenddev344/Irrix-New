@@ -19,9 +19,11 @@
   .hamburger {
     display: block;
   }
-.headerflex{
-  padding: 0;
-}
+
+  .headerflex {
+    padding: 0;
+  }
+
   .mobile-menu.open {
     display: flex;
     padding: 16px 0;
