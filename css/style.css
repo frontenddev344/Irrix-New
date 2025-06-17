@@ -177,12 +177,16 @@
     flex-direction: column;
     padding: 20px;
   }
-
+  .mobile-menu ul {
+    display: grid;
+    gap: 20px;
+    padding-top: 30px;
+}
   .mobile-menu a {
     margin-bottom: 15px;
     color: var(--primary-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .mobile-menu .demo-btn {
@@ -682,6 +686,7 @@
   box-shadow: 0 0 10px rgba(0 0 0 /10%);
   border-radius: 20px;
 }
+
 .contact-form .form-group {
   margin-bottom: 20px;
 }
@@ -719,13 +724,33 @@ textarea#message {
   background-image: url("../images/edit.png");
   background-position: top 15px right 15px;
 }
+.contact-form button {
+  display: block;
+  width: 100%;
+}
 /* get-in-touch end  */
 .site-footer {
-background-image: url("../images/footer-bg-img.png");
-background-repeat: no-repeat;
-background-size: 100% 100%;
-background-position: center;
-padding: 200px 0 0;
+  background-image: url("../images/footer-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 200px 0 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(0deg, #fbffff 0%, #d1edf1 100%);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 130px;
+}
+.footer-top {
+  padding-top: 40px;
 }
 .site-footer .social-icons {
   display: flex;
@@ -741,6 +766,7 @@ padding: 200px 0 0;
   background: var(--icon-color);
   color: #fff;
   border-radius: 50%;
+  transition: all 0.2s linear;
 }
 .site-footer .content-left, .site-footer .content-right {
   display: flex;
@@ -767,6 +793,12 @@ padding: 200px 0 0;
   border-radius: 40px;
   height: 50px;
 }
+
+.site-footer .newsletter-form input[type="email"]:focus-visible {
+  outline: 1px solid #e48400;
+  border-color: #e48400;
+}
+
 .newsletter-form button[type="submit"] {
   width: 100%;
   max-width: 140px;
@@ -783,6 +815,7 @@ padding: 200px 0 0;
   border-top: 1px solid #d0ecf1;
   padding-top: 40px;
   margin-top: 40px;
+  padding-bottom: 20px;
 }
 
 .footer-links {
