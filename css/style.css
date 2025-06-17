@@ -293,7 +293,6 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    white-space: nowrap;
     text-align: center;
     max-width: 300px;
     border: 1px solid;
@@ -317,8 +316,14 @@
   .btn.orange {
     background: var(--tertiary-color);
     color: white;
+    padding: 12px 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid;
     border-color: var(--tertiary-color);
-  }
+}
 
   .btn.orange:hover {
     background: transparent;
@@ -358,7 +363,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    bottom: -75px;
+}
 
   .timeline-wrapper {
     display: grid;
@@ -421,11 +427,12 @@
 
 /* made for you start  */
  .made-for {
-    padding: 150px 0 200px;
+    padding: 150px 0 250px;
     background-image: url("../images/made-for-bg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
+    position: relative;
   
   }
   .made-for .nav-pills {
@@ -438,6 +445,7 @@
     color: #000;
     width: 100%;
     display: flex;
+    align-items: center;
     gap: 20px;
     border-radius: 10px;
     padding: 10px 15px;
@@ -477,6 +485,10 @@
 
 .made-for .nav-link:hover {
   border-color: var(--secondary-color);
+}
+
+.made-for .nav-link.active img {
+  filter: brightness(0) invert(1);
 }
 
 .made-for .content-wrapper h3 {
@@ -556,7 +568,7 @@
   transition: all 0.2s linear;
 }
 
-.content-right {
+.what-can-do .content-right {
   padding: 30px 30px 0;
   background: #f3f5fc;
   border-radius: 16px;
@@ -662,6 +674,9 @@
 .get-in-touch-content .sub-title {
   text-align: left;
 }
+.get-in-touch-content img {
+  transform: translate(50px,70%);
+}
 .contact-form {
   padding: 45px;
   box-shadow: 0 0 10px rgba(0 0 0 /10%);
@@ -703,5 +718,123 @@ select#service {
 textarea#message {
   background-image: url("../images/edit.png");
   background-position: top 15px right 15px;
+}
+/* get-in-touch end  */
+.site-footer {
+background-image: url("../images/footer-bg-img.png");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center;
+padding: 200px 0 0;
+}
+.site-footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background: var(--icon-color);
+  color: #fff;
+  border-radius: 50%;
+}
+.site-footer .content-left, .site-footer .content-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.site-footer h4 {
+  font-size: 26px;
+  line-height: 31px;
+  color:var(--secondary-color);
+  font-weight: 600;
+  font-family: var(--uniform);
+  margin: 0;
+}
+.site-footer .newsletter-form {
+  position: relative;
+  flex-grow: 1;
+}
+.site-footer .newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 15px 30px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 40px;
+  height: 50px;
+}
+.newsletter-form button[type="submit"] {
+  width: 100%;
+  max-width: 140px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e48400;
+  border-color: #e48400;
+}
+
+.footer-btm {
+  border-top: 1px solid #d0ecf1;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.footer-links::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #def2f5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.footer-links a {
+  font-size: 20px;
+  line-height: 35px;
+  color: #31313f;
+  font-weight: 400;
+  font-family: "Poppins";
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+}
+
+.footer-links a:nth-of-type(2)::before, .footer-links a:nth-of-type(2)::after {
+  content: "|";
+  position: absolute;
+}
+.footer-links a:nth-of-type(2)::before {
+  left: 0;
+}
+
+.footer-links a:nth-of-type(2)::after {
+  right: 0;
+}
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+}
+.copyright p {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #545454;
 }
 /* get-in-touch end  */
