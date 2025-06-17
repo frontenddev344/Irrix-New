@@ -12,4 +12,12 @@ hamburger.addEventListener("click", () => {
   }
 });
 
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var header = $("header");
+    header.toggleClass("sticky", $(window).scrollTop() > 0 );
+  });
+});
+
+
 
