@@ -1,22 +1,30 @@
-const hamburger = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobileMenu");
-
-hamburger.addEventListener("click", () => {
-  mobileMenu.classList.toggle("open");
-
-  // Toggle icon between ☰ and ✕
-  if (mobileMenu.classList.contains("open")) {
-    hamburger.innerHTML = "&times;"; // ✕
-  } else {
-    hamburger.innerHTML = "&#9776;"; // ☰
-  }
-});
 
 $(document).ready(function(){
   $(window).scroll(function(){
     var header = $("header");
     header.toggleClass("sticky", $(window).scrollTop() > 0 );
   });
+
+  $("#hamburger").click(function(){
+    $("body").toggleClass("menuToggle");
+    $("#mobileMenu").slideToggle();
+  });
+
+  $(".play-icon").click(function () {
+    $(this).parent(".video-wrapper").toggleClass("video-toggle");
+  
+    const video = $(this).next("video")[0];
+    if (video) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  });
+  
+
+
 });
 
 
