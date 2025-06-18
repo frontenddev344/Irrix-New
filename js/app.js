@@ -1,3 +1,8 @@
+AOS.init({
+  once: true,
+  offset: 100,
+  delay: 100
+});
 
 $(document).ready(function(){
   $(window).scroll(function(){

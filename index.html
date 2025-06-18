@@ -52,6 +52,8 @@
     </div>
   </header>
   <!--Header--end-->
+  <main id="main">
+    
 
   <!--Hero Section--start-->
   <section class="hero-section" data-aos="fade-up" data-aos-duration="1000">
@@ -150,13 +152,19 @@
     <div class="line-graphic">
       <div class="arrow"><img src="images/arrow.png" alt="" arrow="" srcset=""></div>
     </div>
+  <div class="wavy-shape-top">
+    <img src="images/wavy-shape-2.png" alt="wavy-shape-1">
+  </div>
+  <div class="wavy-shape-bottom">
+    <img src="images/wavy-shape-1.png" alt="wavy-shape-2">
+  </div>
   <div class="container">
     <div class="heading-details" data-aos="fade-up" data-aos-duration="800">
       <h2 class="section-title"> <span class="highlight">Who is Mirrix </span>made</h2>
     </div>
     <div class="row">
       <!-- Left Side Tabs -->
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"><img src="images/tab-1.png" alt="tab-1"> Product Managers</button>
           <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"><img src="images/tab-2.png" alt="tab-2"> Marketing Teams</button>
@@ -170,7 +178,7 @@
         </div>
       </div>
       <!-- Right Side Content -->
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <div class="tab-content" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel">
             <div class="content-wrapper" data-aos="fade-left" data-aos-duration="800">
@@ -290,7 +298,7 @@
         <div class="col-lg-8">
           <div class="content-left">
             <div class="icon-box">
-              <img src="images/search-icon.png" alt="icon">
+              <img src="images/profile-icon.png" alt="icon">
             </div>
             <h4>Collaborate with Team</h4>
             <p>Learn how you can esily work together with Mirrix.</p>
@@ -318,7 +326,7 @@
         <div class="col-lg-8">
           <div class="content-left">
             <div class="icon-box">
-              <img src="images/search-icon.png" alt="icon">
+              <img src="images/track-rights.png" alt="icon">
             </div>
             <h4>Track Usage Rights</h4>
             <p>Discover features deigned to help you stay compliant</p>
@@ -397,49 +405,52 @@
       </div>
     </section>
     <!-- step-experience end  -->
-     <section class="get-in-touch" data-aos="fade-up" data-aos-duration="1000">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="get-in-touch-content" data-aos="fade-right" data-aos-duration="800">
-              <div class="heading-details">
-                <h2 class="section-title"><span class="highlight">Get in</span> touch</h2>
-                <p class="sub-title">if you have any question please contact us today or fill the form.</p>
-              </div>
-              <img src="images/contact-us-img.png" alt="get-in-touch">
+  </main>
+  <!-- get-in-touch start  -->
+   <section class="get-in-touch" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="get-in-touch-content" data-aos="fade-right" data-aos-duration="800">
+            <div class="heading-details">
+              <h2 class="section-title"><span class="highlight">Get in</span> touch</h2>
+              <p class="sub-title">if you have any question please contact us today or fill the form.</p>
             </div>
+            <img src="images/contact-us-img.png" alt="get-in-touch">
           </div>
-          <div class="col-lg-6">
-            <div class="contact-form" data-aos="fade-left" data-aos-duration="800">
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                  <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
-                </div>
-                <div class="form-group">
-                  <select class="form-control" id="service" required>
-                    <option value="" disabled selected>Select Service</option>
-                    <option value="demo">Schedule Demo</option>
-                    <option value="support">Technical Support</option>
-                    <option value="partnership">Partnership</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn blue">SUBMIT</button>
-              </form>
-            </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-form" data-aos="fade-left" data-aos-duration="800">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Your Name *" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Your Email *" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" id="phone" placeholder="Phone *" required>
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="service" required>
+                  <option value="" disabled selected>Service *</option>
+                  <option value="demo">Schedule Demo</option>
+                  <option value="support">Technical Support</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="4" placeholder="Message *" required></textarea>
+              </div>
+              <button type="submit" class="btn blue">SUBMIT</button>
+            </form>
           </div>
         </div>
       </div>
-     </section>
+    </div>
+   </section>
+   <!-- get-in-touch end  -->
      <footer class="site-footer" data-aos="fade-up" data-aos-duration="1000">
       <div class="container">
         <div class="footer-top">
@@ -480,13 +491,6 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-      offset: 100,
-      delay: 100
-    });
-  </script>
   <script src="js/app.js"></script>
 </body>
 
