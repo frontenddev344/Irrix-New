@@ -5,18 +5,6 @@
     box-sizing: border-box;
   }
 
-  @font-face {
-    font-family: uniform;
-    src: url("../fonts/uniform-rnd-light.otf");
-    font-weight: 400;
-  }
-
-  @font-face {
-    font-family: uniform;
-    src: url("../fonts/UniformBold.ttf");
-    font-weight: 800;
-  }
-
   body {
     font-family: "Poppins", sans-serif;
     background-color: #f9fdfd;
@@ -27,7 +15,7 @@
     --secondary-color: #0596b3;
     --tertiary-color: orange;
     --grey: #908989;
-    --uniform:uniform;
+    --uniform:'Uniform Rnd Cond';
   }
 
   ul {
@@ -51,7 +39,7 @@
 
   .section-title {
     font-size: 46px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 140%;
     text-align: center;
     font-family: var(--uniform);
@@ -213,6 +201,7 @@
     background-image: linear-gradient(180deg, rgba(191,255,255,0.09803921568627451) 0%, rgba(177,222,231,0.9999999999999999) 100%);
     bottom: 220px;
     z-index: -1;
+    opacity: 0;
 }
 
   .zigzag-img {
@@ -255,6 +244,7 @@
     color: var(--primary-color);
     margin-bottom: 20px;
     text-align: left;
+    font-family: var(--uniform);
   }
 
   .hero-section .image-content img {
