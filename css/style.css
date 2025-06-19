@@ -662,6 +662,7 @@
   background-image: linear-gradient(0deg, #e0f1f5 0%, #f2f9fb 41%, #e0f1f5 100%);
   top: 150px;
   z-index: -1;
+  bottom: 180px;
 }
 .team-card-warp {
   padding: 40px 0;
@@ -727,6 +728,7 @@
   padding: 45px;
   box-shadow: 0 0 10px rgba(0 0 0 /10%);
   border-radius: 20px;
+  max-width: 550px;
 }
 
 .contact-form .form-group {
