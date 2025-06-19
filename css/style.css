@@ -34,7 +34,7 @@
   }
 
   .heading-details {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .section-title {
@@ -472,7 +472,7 @@
   border-radius: 50%;
   outline: 2px solid #4faec6;
   outline-offset: -12px;
-  box-shadow: 0 0 10px 0 rgba(0 0 0/40%);
+  box-shadow: 0 0 15px 0 #4faec63b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -636,6 +636,13 @@
 .made-for .content-wrapper .btn {
   margin-top: 25px;
 }
+.can-do-swiper {
+  padding-bottom: 40px;
+}
+
+.can-do-swiper span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background:var(--secondary-color);
+}
 /* made for you end  */
 
 /* what-can-do start  */
@@ -647,6 +654,7 @@
   background: #fff;
   box-shadow: 0 0 15px 10px rgb(5 150 179 / 5%);
   padding: 10px;
+  width: calc(100% - 150px);
   max-width: 1150px;
   margin: 0 auto;
 }
@@ -775,7 +783,7 @@
   bottom: 180px;
 }
 .team-card-warp {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .team-card-warp .row {
   align-items: center;
@@ -1037,3 +1045,56 @@ textarea#message {
 }
 
 /* site-footer end  */
+
+
+.swiper.vertical-slider {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.vertical-slider .swiper-slide {
+  height: 100%;
+}
+
+.vertical-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet.nav-link {
+  width: auto;
+  height: auto;
+  opacity: 1;
+  display: flex !important;
+}
+
+.vertical-slider .custom-pagination {
+  position: static;
+  transform: translate(0, 0);
+  width: 30%;
+  max-width: 400px;
+}
+
+.vertical-slider .swiper-wrapper {
+  width: 70%;
+  margin-left: auto;
+  max-width: 940px;
+}
+
+.made-for .nav-link.swiper-pagination-bullet-active {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+
+.made-for .nav-link.swiper-pagination-bullet-active::before {
+  background: #fff;
+}
+
+.made-for .nav-link.swiper-pagination-bullet-active img {
+  filter: brightness(0) invert(1);
+}

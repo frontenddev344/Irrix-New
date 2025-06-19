@@ -109,5 +109,92 @@ var swiper = new Swiper('.can-do-swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
   // You can add more options as needed
+});
+
+
+
+
+// vertical slider 
+
+const thumbsSwiper = new Swiper(".thumbsSwiper", {
+  direction: "vertical",
+  spaceBetween: 10,
+  slidesPerView: 5,
+  watchSlidesProgress: true,
+  slideToClickedSlide: true,
+  loop: true,
+});
+
+const mainSwiper = new Swiper(".mainSwiper", {
+  direction: "vertical",
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  thumbs: {
+    swiper: thumbsSwiper,
+  },
+  on: {
+    slideChange: () => {
+      // Optional: Sync animation
+      const activeSlide = document.querySelector('.mainSwiper .swiper-slide-active .content-wrapper');
+      activeSlide?.setAttribute('data-aos', 'fade-left');
+    }
+  }
+});
+
+
+// var swiper = new Swiper(".vertical-slider", {
+//   direction: "vertical",
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   mousewheel: true,
+//   autoplay: {
+//     delay: 3000,
+//     disableOnInteraction: false,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
+
+
+// Use the nav-link content from file_context_0 for each pagination item
+var slideLabels = [
+  '<img src="images/tab-1.png" alt="tab-1"> Product Managers',
+  '<img src="images/tab-2.png" alt="tab-2"> Marketing Teams',
+  '<img src="images/tab-3.png" alt="tab-3"> STEP solution owners',
+  '<img src="images/tab-4.png" alt="tab-4"> Image Editors',
+  '<img src="images/tab-5.png" alt="tab-5"> Sales teams',
+  '<img src="images/tab-6.png" alt="tab-6"> Customer Support',
+  '<img src="images/tab-7.png" alt="tab-7"> Suppliers',
+  '<img src="images/tab-8.png" alt="tab-8"> Distributors/customers',
+  '<img src="images/tab-9.png" alt="tab-9"> External agencies'
+];
+
+var verticalSlider = new Swiper('.vertical-slider', {
+  direction: "vertical",
+  slidesPerView: 1,
+  spaceBetween: 30,
+  mousewheel: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      // Add 'nav-link' class in addition to Swiper's className
+      return '<div class="' + className + ' nav-link">' + slideLabels[index] + '</div>';
+    }
+  },
 });
