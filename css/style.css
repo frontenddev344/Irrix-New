@@ -13,7 +13,7 @@
   :root {
     --primary-color: #000;
     --secondary-color: #0596b3;
-    --tertiary-color: orange;
+    --tertiary-color:#e48400;
     --grey: #908989;
     --uniform:'Uniform Rnd Cond';
   }
@@ -292,7 +292,8 @@
     gap: 15px;
     flex-wrap: wrap;
     flex-direction: column;
-  }
+    max-width: 250px;
+}
 
   .hero-section .container {
     padding: 0 20px;
@@ -378,15 +379,15 @@
     bottom: -75px;
 }
 
-  .timeline-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
-    max-width: 1300px;
-    margin: auto;
-    align-items: start;
-    padding: 180px 0;
-  }
+.timeline-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  max-width: 1300px;
+  margin: auto;
+  align-items: start;
+  padding: 180px 0 100px;
+}
 
   .timeline-column {
     display: flex;
@@ -465,8 +466,9 @@
   left: 0;
 }
 
-  .made-for .nav-pills {
-    max-width: 400px;
+.made-for .nav-pills {
+  max-width: 400px;
+  gap: 8px;
 }
 
   .made-for .nav-link {
@@ -545,6 +547,8 @@
   background: #fff;
   box-shadow: 0 0 15px 10px rgb(5 150 179 / 5%);
   padding: 10px;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 .can-do-card:not(:last-of-type) {
   margin-bottom: 40px;
