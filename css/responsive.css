@@ -143,6 +143,20 @@
   max-width: 500px;
   margin: 0 auto;
 }
+.timeline-column.right, .timeline-column.left {
+  text-align: left;
+  align-items: start;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:0;
+}
+.timeline-item {
+  max-width: 100%;
+}
+.timeline-item  img {
+  max-width: 130px;
+  display:block;
+}
 }
 
 @media (max-width: 768px) {
@@ -207,6 +221,10 @@
 .site-footer h4 {
   font-size: 22px;
 }
+.timeline-column.right, .timeline-column.left {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 }
 
 @media screen and (max-width:575px) {
@@ -271,6 +289,12 @@
   font-size: 14px;
 }
 .footer-links a {
+  font-size: 18px;
+}
+.timeline-column.right, .timeline-column.left {
+  grid-template-columns: 100%;
+}
+.timeline-item h3 {
   font-size: 18px;
 }
 }

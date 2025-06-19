@@ -401,6 +401,11 @@
     margin-left: 0;
   }
 
+  .timeline-item  img {
+    max-width: 130px;
+    display: none;
+  }
+
   .timeline-column.left {
     text-align: end;
     align-items: end;
