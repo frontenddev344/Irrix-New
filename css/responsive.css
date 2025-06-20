@@ -170,6 +170,7 @@
   max-width: 100%;
   position: absolute;
   top: 0;
+  left: 0;
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
