@@ -33,57 +33,6 @@ $(document).ready(function(){
 });
 
 
-
-
-// const timelineItems = document.querySelectorAll('.timeline-item');
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach(entry => {
-//     const item = entry.target;
-
-//     if (entry.isIntersecting) {
-//       // Remove active state from all timeline-items
-//       document.querySelectorAll('.timeline-item').forEach(ti => {
-//         ti.classList.remove('active');
-//       });
-
-//       // Add active state to the current one
-//       item.classList.add('active');
-//     }
-//   });
-// }, {
-//   threshold: 0.6
-// });
-
-// timelineItems.forEach(item => observer.observe(item));
-
-
-// const timelineItems = document.querySelectorAll('.timeline-item');
-
-// const observerOptions = {
-//   root: null,
-//   rootMargin: '0px',
-//   threshold: 0.8, // Adjust sensitivity
-// };
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       // Remove "active" from all
-//       timelineItems.forEach((item) => item.classList.remove('active'));
-      
-//       // Add "active" only to the one in view
-//       entry.target.classList.add('active');
-//     }
-//   });
-// }, observerOptions);
-
-// // Observe each timeline item
-// timelineItems.forEach((item) => {
-//   observer.observe(item);
-// });
-
-
 window.addEventListener('scroll', () => {
   let scrollY = window.scrollY + window.innerHeight * 0.55; // Change trigger point lower (e.g., 75%)
 
@@ -117,55 +66,7 @@ var swiper = new Swiper('.can-do-swiper', {
 });
 
 
-
-
 // vertical slider 
-
-const thumbsSwiper = new Swiper(".thumbsSwiper", {
-  direction: "vertical",
-  spaceBetween: 10,
-  slidesPerView: 5,
-  watchSlidesProgress: true,
-  slideToClickedSlide: true,
-  loop: true,
-});
-
-const mainSwiper = new Swiper(".mainSwiper", {
-  direction: "vertical",
-  spaceBetween: 20,
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  thumbs: {
-    swiper: thumbsSwiper,
-  },
-  on: {
-    slideChange: () => {
-      // Optional: Sync animation
-      const activeSlide = document.querySelector('.mainSwiper .swiper-slide-active .content-wrapper');
-      activeSlide?.setAttribute('data-aos', 'fade-left');
-    }
-  }
-});
-
-
-// var swiper = new Swiper(".vertical-slider", {
-//   direction: "vertical",
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   mousewheel: true,
-//   autoplay: {
-//     delay: 3000,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
-
 
 // Use the nav-link content from file_context_0 for each pagination item
 var slideLabels = [

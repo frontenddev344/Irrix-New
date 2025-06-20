@@ -1051,7 +1051,9 @@ textarea#message {
   width: 100%;
   height: 800px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
+  gap: 30px;
 }
 
 .vertical-slider .swiper-slide {
@@ -1080,7 +1082,7 @@ textarea#message {
 }
 
 .vertical-slider .swiper-wrapper {
-  width: 70%;
+  width: calc(70% - 30px);
   margin-left: auto;
   max-width: 940px;
 }

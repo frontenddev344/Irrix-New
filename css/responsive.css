@@ -160,6 +160,23 @@
 .contact-form {
   max-width: 100%;
 }
+.vertical-slider .swiper-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 70px;
+}
+.vertical-slider .custom-pagination {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
 }
 
 @media (max-width: 768px) {
@@ -269,6 +286,9 @@
 .timeline-item img {
   max-width: 50px;
 }
+.swiper.vertical-slider {
+  height: 700px;
+}
 
 }
 
@@ -341,5 +361,14 @@
 }
 .timeline-item h3 {
   font-size: 18px;
+}
+.swiper.vertical-slider {
+  height: 600px;
+}
+.can-do-card {
+  width: 100%;
+}
+.what-can-do .swiper-button-prev, .what-can-do .swiper-button-next {
+  display: none;
 }
 }
