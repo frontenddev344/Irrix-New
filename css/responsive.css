@@ -373,6 +373,18 @@
 .what-can-do .swiper-button-prev, .what-can-do .swiper-button-next {
   display: none;
 }
+.timeline-wrapper {
+  padding: 120px 0 20px;
+}
+.get-in-touch {
+  padding: 60px 0;
+}
+.what-can-do {
+  padding: 120px 0 60px;
+}
+.step-experience {
+  padding: 80px 0 40px;
+}
 .site-footer {
   padding: 40px 0 0;
 }
@@ -384,5 +396,8 @@
 }
 .footer-links a {
   font-size: 16px;
+}
+.site-footer .newsletter-form input[type="email"] {
+  font-size: 14px;
 }
 }
