@@ -932,6 +932,7 @@ textarea#message {
 .social-icons a {
   width: 50px;
   height: 50px;
+  border: 1px solid transparent;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -940,6 +941,11 @@ textarea#message {
   color: #fff;
   border-radius: 50%;
   transition: all 0.2s linear;
+}
+.social-icons a:hover {
+  color: var(--icon-color);
+  background: #fff;
+  border: 1px solid #ddd;
 }
 .site-footer .content-left, .site-footer .content-right {
   display: flex;

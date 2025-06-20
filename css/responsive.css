@@ -289,7 +289,9 @@
 .swiper.vertical-slider {
   height: 700px;
 }
-
+.copyright p {
+  font-size: 16px;
+}
 }
 
 @media screen and (max-width:575px) {
@@ -370,5 +372,17 @@
 }
 .what-can-do .swiper-button-prev, .what-can-do .swiper-button-next {
   display: none;
+}
+.site-footer {
+  padding: 40px 0 0;
+}
+.footer-links {
+  padding-bottom: 0;
+}
+.copyright p {
+  font-size: 14px;
+}
+.footer-links a {
+  font-size: 16px;
 }
 }
