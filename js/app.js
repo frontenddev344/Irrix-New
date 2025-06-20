@@ -16,14 +16,19 @@ $(document).ready(function(){
   });
 
   $(".play-icon").click(function () {
-    $(this).parent(".video-wrapper").toggleClass("video-toggle");
-  
-    const video = $(this).next("video")[0];
-    if (video) {
-      if (video.paused) {
-        video.play();
+    var $wrapper = $(this).closest(".video-wrapper");
+    $wrapper.toggleClass("video-toggle");
+
+    var $video = $wrapper.find("video").get(0);
+    var $icon = $(this).find("i");
+
+    if ($video) {
+      if ($video.paused) {
+        $video.play();
+        $icon.removeClass("ri-play-fill").addClass("ri-pause-fill");
       } else {
-        video.pause();
+        $video.pause();
+        $icon.removeClass("ri-pause-fill").addClass("ri-play-fill");
       }
     }
   });

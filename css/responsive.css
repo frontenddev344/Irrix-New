@@ -239,6 +239,9 @@
     height: 50px;
     padding: 12px;
   }
+  .play-icon i {
+    font-size: 30px;
+}
   .team-card-content-left img {
     max-width: 200px;
 }
