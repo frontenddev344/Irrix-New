@@ -1,3 +1,14 @@
+@media screen and (max-width:1400px){
+  .hero-section .text-content h1 {
+    font-size: 60px;
+  }
+  .hero-section .text-content p {
+    font-size: 24px;
+  }
+.hero-section .text-content ul li {
+  font-size: 18px;
+  }
+}
 @media screen and (max-width:1200px){
   .hero-section .text-content h1 {
     font-size: 52px;
@@ -32,6 +43,7 @@
   .made-for .nav-link {
     font-size: 16px;
 }
+
 }
 @media (max-width:991px) {
   .header{
@@ -181,6 +193,9 @@
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
 }
+.swiper.vertical-slider {
+  height: 950px;
+}
 }
 
 @media (max-width: 768px) {
@@ -297,10 +312,13 @@
   max-width: 50px;
 }
 .swiper.vertical-slider {
-  height: 750px;
+  height: 800px;
 }
 .copyright p {
   font-size: 16px;
+}
+.faq-section .accordion-item .accordion-header button {
+  font-size: 20px;
 }
 }
 
@@ -410,5 +428,9 @@
 }
 .site-footer .newsletter-form input[type="email"] {
   font-size: 14px;
+}
+.faq-section .accordion-item .accordion-header button {
+  padding: 16px;
+  font-size: 18px;
 }
 }

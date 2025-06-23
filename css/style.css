@@ -238,7 +238,7 @@
 }
 
   .hero-section .text-content h1 {
-    font-size: 60px;
+    font-size: 72px;
     line-height: 1.2;
     font-weight: 700;
     color: var(--primary-color);
@@ -263,11 +263,11 @@
   }
 
   .hero-section .text-content p {
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 20px;
     text-align: left;
-    max-width: 396px;
-  }
+    max-width: 480px;
+}
 
   .hero-section-flex {
     display: flex;
@@ -283,32 +283,23 @@
 
   .hero-section .text-content ul li {
     margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 20px;
     color: var(--primary-color);
-  }
+    display: flex;
+    align-items: start;
+    gap: 5px;
+}
 
   .cst-buttons {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     flex-direction: column;
-    max-width: 250px;
+    max-width: 280px;
 }
 
   .hero-section .container {
     padding: 0 20px;
-  }
-
-  .cst-buttons .btn {
-    padding: 12px 5px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    max-width: 300px;
-    border: 1px solid;
-    transition: all 0.2s linear;
   }
 
   .btn.blue {
@@ -343,6 +334,16 @@
     color: var(--tertiary-color);
   }
 
+  .cst-buttons .btn {
+    padding: 12px 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    max-width: 300px;
+    transition: all 0.2s linear;
+}
   .hero-section .text-content {
     padding: 0;
     text-align: center;
@@ -542,20 +543,20 @@
   transform: translateX(0) scale(1);
 }
 /* made for you start  */
- .made-for {
-    padding: 150px 0 250px;
-    background-image: url("../images/made-for-bg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    position: relative;
-  
-  }
+.made-for {
+  padding: 150px 0 250px;
+  background-image: url("../images/made-for-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
 
-  .wavy-shape-top {
-    position: absolute;
-    right: 0;
-    top: 230px;
+}
+
+.wavy-shape-top {
+  position: absolute;
+  right: 0;
+  top: 230px;
 }
 
 .wavy-shape-bottom {
@@ -564,25 +565,30 @@
   left: 0;
 }
 
+.made-for .content-wrapper {
+  width: 100%;
+  /* max-width: 750px; */
+}
+
 .made-for .nav-pills {
   max-width: 400px;
   gap: 8px;
 }
 
-  .made-for .nav-link {
-    font-size: 18px;
-    font-weight: 400;
-    color: #000;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-radius: 10px;
-    padding: 10px 15px;
-    background: #fff;
-    border: 1px solid #d3dfe7;
-    position: relative;
-    transition: all 0.2s linear;
+.made-for .nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: #fff;
+  border: 1px solid #d3dfe7;
+  position: relative;
+  transition: all 0.2s linear;
 }
 .made-for .nav-link::before {
   content: "";
@@ -843,7 +849,7 @@
   text-align: left;
 }
 .get-in-touch-content img {
-  transform: translate(50px,70%);
+  transform: translate(50px,100%);
 }
 .contact-form {
   padding: 45px;
@@ -1107,4 +1113,54 @@ textarea#message {
 
 .made-for .nav-link.swiper-pagination-bullet-active img {
   filter: brightness(0) invert(1);
+}
+
+/* faq start  */
+.faq-section {
+  padding: 80px 0 60px;
+}
+.faq-section .accordion {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+.faq-section .accordion-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.faq-section .accordion-item {
+  background: none;
+  border: 0;
+}
+
+.faq-section .accordion-item .accordion-header button {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 140%;
+  font-family: var(--uniform);
+  background: #fff;
+  color: #20202f;
+  align-items: start;
+  box-shadow: none;
+  transition: all 0.2s linear;
+}
+.faq-section .accordion-item .accordion-header button:hover {
+  background: #f0f7fa;
+}
+.faq-section .accordion-item .accordion-header button:focus {
+  box-shadow: none;
+  color:inherit;
+}
+
+.faq-section .accordion-item .accordion-header button:not(.collapsed) {
+  color: var(--secondary-color);
+}
+
+.faq-section .accordion-body {
+  background: #fff;
+  font-size: 16px;
+}
+
+.faq-section .accordion-button:not(.collapsed)::after {
+  filter: invert(46%) sepia(98%) saturate(3033%) hue-rotate(161deg) brightness(91%) contrast(96%);
 }

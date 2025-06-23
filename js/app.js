@@ -56,7 +56,7 @@ window.addEventListener('scroll', () => {
 var swiper = new Swiper('.can-do-swiper', {
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   navigation: {
@@ -92,7 +92,7 @@ var verticalSlider = new Swiper('.vertical-slider', {
   spaceBetween: 30,
   mousewheel: false,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
