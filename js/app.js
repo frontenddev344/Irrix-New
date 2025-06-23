@@ -56,7 +56,7 @@ window.addEventListener('scroll', () => {
 var swiper = new Swiper('.can-do-swiper', {
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   navigation: {
