@@ -92,7 +92,7 @@ var verticalSlider = new Swiper('.vertical-slider', {
   spaceBetween: 30,
   mousewheel: false,
   autoplay: {
-    delay: 5000,
+    delay: 7000,
     disableOnInteraction: false,
   },
   pagination: {

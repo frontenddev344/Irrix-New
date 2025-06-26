@@ -43,7 +43,15 @@
   .made-for .nav-link {
     font-size: 16px;
 }
-
+.parties-info img {
+  max-width: 100px;
+}
+.comparison-grid::before {
+  top: 73px;
+}
+.comparison-grid .cell:not(.cell-head) {
+  font-size: 16px;
+}
 }
 @media (max-width:991px) {
   .header{
@@ -149,7 +157,7 @@
   font-size: 22px;
 }
 .step-experience {
-  padding: 200px 0 40px;
+  padding: 200px 0 170px;
 }
 .site-footer {
   padding: 120px 0 0;
@@ -200,6 +208,30 @@
 .swiper.vertical-slider {
   height: 950px;
 }
+.faq-section .accordion-item .accordion-header button {
+  font-size: 16px;
+}
+.toggle-icon {
+  margin-left: auto;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+}
+.toggle-icon i {
+  font-size: 26px;
+}
+.comparison-grid .cell {
+  padding: 8px 15px;
+}
+.comparison-grid::before {
+  top: 57px;
+}
+.faq-section {
+  padding: 120px 0 180px;
+}
+.comparison-grid .cell:not(.cell-head) {
+  font-size: 14px;
+}
 }
 
 @media (max-width: 768px) {
@@ -236,6 +268,9 @@
   .timeline-icon {
     margin: 20px 0;
     justify-content: center;
+  }
+  .made-for {
+    padding: 150px 0 150px;
   }
   .made-for .content-wrapper h3 {
     font-size: 28px;
@@ -321,9 +356,29 @@
 .copyright p {
   font-size: 16px;
 }
-.faq-section .accordion-item .accordion-header button {
-  font-size: 20px;
+
+.faq-section .accordion {
+  grid-template-columns: 100%;
 }
+.comparison-grid {
+  min-width: 820px;
+}
+.comparison-wrapper .bg-col {
+  width: calc(820px / 3);
+}
+.comparison-wrapper .bg-col-2 {
+  left: 273px;
+}
+.comparison-wrapper .bg-col-3 {
+  left: 546px;
+}
+.comparison-grid .cell.cell-head h4 {
+  font-size: 18px;
+}
+.comparison-btm-content h4, .comparison-btm-content h5 {
+  font-size: 22px;
+}
+
 }
 
 @media screen and (max-width:575px) {
@@ -433,8 +488,19 @@
 .site-footer .newsletter-form input[type="email"] {
   font-size: 14px;
 }
+.faq-section {
+  background-size: cover;
+  background-position: center;
+}
 .faq-section .accordion-item .accordion-header button {
-  padding: 16px;
+  padding: 12px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.faq-section .accordion-body {
+  font-size: 14px;
+}
+.comparison-btm-content h4, .comparison-btm-content h5 {
   font-size: 18px;
 }
 }
