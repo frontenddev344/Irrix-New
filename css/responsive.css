@@ -462,16 +462,19 @@
   display: none;
 }
 .timeline-wrapper {
-  padding: 120px 0 20px;
+  padding: 120px 0;
 }
 .get-in-touch {
   padding: 60px 0;
 }
 .what-can-do {
-  padding: 120px 0 60px;
+  padding: 120px 0;
 }
 .step-experience {
-  padding: 80px 0 40px;
+  padding: 80px 0 120px;
+}
+.faq-section {
+  padding: 120px 0 150px;
 }
 .site-footer {
   padding: 40px 0 0;
