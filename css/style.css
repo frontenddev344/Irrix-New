@@ -428,12 +428,15 @@ main#main {
     align-items: end;
   }
 
-.content-wrap {
+  .content-wrap {
     outline: 20px solid transparent;
     border-radius: 20px;
     transform: translateY(20px) scale(0.95);
     min-height: 180px;
     transition: all 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .content {
   padding: 10px;
