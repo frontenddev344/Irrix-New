@@ -55,6 +55,7 @@
 .comparison-grid .cell:not(.cell-head) {
   font-size: 16px;
 }
+
 }
 @media (max-width:991px) {
   .header{

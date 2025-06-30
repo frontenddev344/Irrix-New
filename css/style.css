@@ -403,7 +403,7 @@ main#main {
     text-align: right;
     height: auto;
     position: relative;
-    min-height: 200px;
+    min-height: 180px;
   }
 
   .timeline-item:not(:first-child) {
@@ -432,6 +432,7 @@ main#main {
     outline: 20px solid transparent;
     border-radius: 20px;
     transform: translateY(20px) scale(0.95);
+    min-height: 180px;
     transition: all 0.2s linear;
 }
 .content {
