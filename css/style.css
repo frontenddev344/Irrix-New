@@ -907,6 +907,10 @@ input#email{
 input#phone {
   background-image: url("../images/phone.png");
 }
+input#Organisation {
+  background-image: url("../images/organization.png");
+  background-size: 20px;
+}
 select#service {
   background-image: url("../images/dropdown.png");
 }
