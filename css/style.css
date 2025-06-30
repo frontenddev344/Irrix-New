@@ -1,4 +1,4 @@
-  /* Base reset */
+  /* style base  */
   * {
     margin: 0;
     padding: 0;
@@ -1324,7 +1324,7 @@ textarea#message {
   z-index: 1;
 }
 
-.comparison-wrapper .bg-col-1 { left: 0; background-image: url('bg1.jpg'); }
+.comparison-wrapper .bg-col-1 { left: 0;}
 .comparison-wrapper .bg-col-2 { left: 33.33%; background-image: url('../images/comparison-mid-bg.png'); }
 .comparison-wrapper .bg-col-3 { left: 66.66%; background-image: url('../images/comparison-right-bg.png'); }
 
