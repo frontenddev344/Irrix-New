@@ -841,7 +841,7 @@ main#main {
 /* step-experience end  */
 /* get-in-touch start  */
 .get-in-touch {
-  padding: 150px 0 80px;
+  padding: 100px 0 80px;
   overflow: clip;
   overflow-y: visible;
   position: relative;
@@ -865,7 +865,7 @@ main#main {
   padding: 45px;
   box-shadow: 0 0 10px rgba(0 0 0 /10%);
   border-radius: 20px;
-  max-width: 550px;
+  max-width:825px;
   margin: 0 auto;
 }
 
