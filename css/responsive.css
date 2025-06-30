@@ -40,8 +40,8 @@
   .can-do-card .content-left h4 {
     font-size: 26px;
   }
-  .timeline-item {
-    height: 200px;
+  .timeline-item:not(:first-child) {
+    margin-top:0;
   }
   .made-for .nav-link {
     font-size: 16px;

@@ -401,9 +401,18 @@ main#main {
     border-radius: 12px;
     margin-left: 0;
     text-align: right;
-    height: 120px;
+    height: auto;
     position: relative;
+    min-height: 200px;
   }
+
+  .timeline-item:not(:first-child) {
+    margin-top: -50px;
+  }
+
+  .timeline-item.active {
+    z-index: 1;
+}
 
   .timeline-item:nth-child(even) {
     margin-left: auto;
@@ -427,13 +436,15 @@ main#main {
 }
 .content {
   padding: 10px;
+  text-align: center;
 }
-  .timeline-item h3 {
-    margin-bottom: 12px;
-    font-size: 20px;
-    color: var(--primary-color);
-    font-weight: 600;
-  }
+.timeline-item h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-wrap: balance;
+}
 
   .timeline-item p {
     font-size: 15px;
@@ -475,8 +486,8 @@ main#main {
   transition: all 0.3s linear;
   position: absolute;
   right: 0;
-  top: -35px;
-  transform: translate(calc(100% * 1.6), 0);
+  top:50%;
+  transform: translate(calc(100% * 1.6), -50%);
 }
 .inner-wrapper {
   width: 140px;
@@ -528,10 +539,7 @@ main#main {
 }
 
 .timeline-item:nth-child(even) .icon-wrapper {
-  transform: translate(calc(-100% * 1.6), 0);
-}
-.timeline-item:nth-child(even) .icon-wrapper {
-  transform: translate(calc(-100% * 2.6), 0);
+  transform: translate(calc(-100% * 2.6), -50%);
 }
 .timeline-item:nth-child(even) .icon-wrapper::before {
   transform: translateX(100%);
@@ -1185,7 +1193,7 @@ textarea#message {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 28px;
   color: #333333;
   font-family: "Poppins";
