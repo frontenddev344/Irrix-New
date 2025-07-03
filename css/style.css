@@ -94,24 +94,31 @@ main#main {
     gap: 25px;
   }
 
-  .nav {
+  .site-nav ul {
     display: flex;
+    flex-wrap: wrap; 
     align-items: center;
     gap: 25px;
   }
 
-  .nav a {
-    text-decoration: none;
+  .site-nav a {
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    transition: color 0.3s;
+    display: inline-block;
+    transition:all 0.2s linear;
   }
 
-  .nav a:hover {
+  .site-nav a:hover {
     color: #007c91;
   }
-
+  .site-nav a.demo-btn {
+    color: #fff;
+    font-size: 16px;
+  }
+  .site-nav a.demo-btn:hover {
+    color: #007c91;
+  }
   .demo-btn {
     background-color: var(--secondary-color);
     color: white;
@@ -259,7 +266,7 @@ main#main {
   .headerflex {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 10px;
     align-items: center;
   }
 

@@ -12,7 +12,7 @@ $(document).ready(function(){
 
   $("#hamburger").click(function(){
     $("body").toggleClass("menuToggle");
-    $("#mobileMenu").slideToggle();
+    $("nav.site-nav").slideToggle();
   });
 
   $(".play-icon").click(function () {
