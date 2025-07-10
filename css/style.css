@@ -1565,7 +1565,13 @@
     display: inline-block;
     font-size: 14px;
     transition: background-color 0.3s ease;
+    border: 1px solid #0596b3;
   }
+.error-container a:hover {
+    background-color: transparent;
+    color: #0596b3;
+    border: 1px solid #0596b3;
+}
   section.glass_404 {
     padding: 120px 0 80px;
   }
