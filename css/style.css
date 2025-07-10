@@ -1563,8 +1563,8 @@
     padding: 12px 40px;
     border-radius: 25px;
     display: inline-block;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    transition: all 0.2s linear;
     border: 1px solid #0596b3;
   }
 .error-container a:hover {
