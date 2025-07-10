@@ -1556,7 +1556,7 @@
     margin-bottom: 30px;
   }
 
-  .error-container a {
+ .error-container a {
     background: var(--secondary-color);
     color: white;
     border-color: var(--secondary-color);
@@ -1566,7 +1566,6 @@
     font-size: 14px;
     transition: background-color 0.3s ease;
   }
-
   section.glass_404 {
     padding: 120px 0 80px;
   }
