@@ -1557,12 +1557,13 @@
   }
 
   .error-container a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px 25px;
-    background-color: #0596b3;
+    background: var(--secondary-color);
     color: white;
-    border-radius: 6px;
+    border-color: var(--secondary-color);
+    padding: 12px 40px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 14px;
     transition: background-color 0.3s ease;
   }
 
