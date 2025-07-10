@@ -1541,6 +1541,8 @@
   /* 404 styling start */
   .error-container {
     max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .error-container h1 {
@@ -1565,7 +1567,7 @@
   }
 
   section.glass_404 {
-    padding: 80px 0;
+    padding: 120px 0 80px;
   }
 
   .error-container a:hover {
